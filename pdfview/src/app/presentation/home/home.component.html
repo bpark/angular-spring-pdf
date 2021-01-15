@@ -1,0 +1,17 @@
+<div class="container">
+  <h1>Generate your pdf</h1>
+
+  <form (ngSubmit)="generate()">
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">Email address</label>
+      <input type="email"
+             class="form-control"
+             id="exampleInputEmail1"
+             aria-describedby="emailHelp"
+             name="email"
+             [(ngModel)]="email">
+      <div id="emailHelp" class="form-text">We'll share your email with all our partners!</div>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
